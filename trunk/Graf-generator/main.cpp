@@ -28,11 +28,11 @@ bool isInserted(int x, int y) {
 
 node_t generateNode(int maxX, int maxY) {
     //Generate numbers
-    int x = rand() % (maxX + 1);
-    int y = rand() % (maxY + 1);
+    int x = rand() % maxX;
+    int y = rand() % maxY;
     node_t node;
-    node.x = x;
-    node.y = y;
+    node.x = x+1;
+    node.y = y+1;
     return node;
 }
 
@@ -73,7 +73,7 @@ int main(int argc, char** argv) {
     }
 
     if (falseStart || nodes < 2 || maxX < 2 || maxY < 2) {
-        cerr << "Usage: " << argv[0] << " -n [nodes] -x [maximal horizontal size] -y [maximal vertical size]" << endl;
+        cerr << "Usage: " << argv[0] << " -n [nodes] -x [maximal horizontal size] -y [maximal vertical size] -r [space around node]" << endl;
         return 1;
     }
     if (maxX * maxY < nodes) {
