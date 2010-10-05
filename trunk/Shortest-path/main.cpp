@@ -10,6 +10,7 @@
 #include <math.h>
 #include <iostream>
 #include <fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -17,11 +18,13 @@ using namespace std;
 #define     STACKSTEP       20
 
 //Basic variables
+int * nodes;
+double * distances;
 int * localStack;
+int nodesCount;
 int stackPointer;
 int stackSize;
 int stackItemSize;
-int * nodes;
 
 /*
  * Stack push
@@ -58,9 +61,33 @@ int pop(int * data) {
  */
 double getDistance(int nodeA, int nodeB) {
     double distance = 0;
-    distance += pow((nodes[(--nodeA * 2)] - nodes[(--nodeB * 2)]), 2);
+    distance += pow((nodes[(nodeA * 2)] - nodes[(nodeB * 2)]), 2);
     distance += pow((nodes[(nodeA * 2) + 1] - nodes[(nodeB * 2) + 1]), 2);
     distance = sqrt(distance);
+    return distance;
+}
+
+/**
+ * Pregenerates all distances
+ */
+bool generateDistances() {
+    int distancesCount = pow(nodesCount, 2);
+    distances = new double[distancesCount];
+    for (int x = 0; x < nodesCount; x++) {
+        for (int y = 0; y < nodesCount; y++) {
+            distances[x + y * nodesCount] = getDistance(x, y);
+        }
+    }
+}
+
+/**
+ * Get distance of whole row
+ */
+double itemDistance(int * data) {
+    double distance = 0;
+    for (int x = 1; x < stackItemSize - 1; x++) {
+        if (data[x] != 0 && data[x + 1] != 0) distance += distances[(data[x] - 1) + ((data[x + 1] - 1) * nodesCount)];
+    }
     return distance;
 }
 
@@ -69,11 +96,12 @@ double getDistance(int nodeA, int nodeB) {
  */
 int main(int argc, char** argv) {
     //Welcome text
-    cout << "Shortest Hamilton's path. Waiting for input." << endl;
+    cout << "Shortest Hamilton's path. Waiting for input. :)" << endl;
 
     //Define basic variables
     char input[32];
-    int numA, numB, nodesCount;
+    int numA, numB, statesTried = 0;
+    time_t seconds;
 
     //Read count of nodes
     cin.getline(input, sizeof (input));
@@ -92,15 +120,17 @@ int main(int argc, char** argv) {
         numA = atoi(input);
         cin.getline(input, sizeof (input), '\n');
         numB = atoi(input);
-        if (numA < 1 || numB < 1) {
-            cerr << "Not valid node.";
-            return 1;
-        }
+
         nodes[(x * 2)] = numA;
         nodes[(x * 2) + 1] = numB;
         cout << "Node on " << numA << "x" << numB << " loaded." << endl;
     }
     cout << "Nodes loaded, searching shortest way." << endl;
+
+    generateDistances();
+
+    cout << "Distances pregenerated, running paralel algorithm." << endl;
+    seconds = time(NULL);
 
     //Create basic stack
     stackItemSize = nodesCount + 1; //size of one stack item
@@ -139,38 +169,44 @@ int main(int argc, char** argv) {
                     y++;
                 }
                 data[y] = data[0];
-                push(data); //Insert
+                if (minimalDistace > itemDistance(data) || minimalDistace == -1 || stackPointer == 0) {
+                    push(data); //Insert
+                }
                 //Reload old value
                 data[y] = dataTemp[y++];
             }
         } else {
             //We have final part, now print distance
-            double distance = 0;
-            for (int x = 1; x < stackItemSize - 1; x++) {
-                distance += getDistance(data[x], data[x + 1]);
-            }
-
+            double distance = itemDistance(data);
+            statesTried++;
             if (minimalDistace > distance || minimalDistace == -1) {
                 minimalDistace = distance;
+                cout << "New minimal distance found: " << minimalDistace << endl;
                 for (int x = 0; x < stackItemSize; x++) {
                     dataFinal[x] = data[x + 1] - 1;
                 }
             }
 
             if (stackPointer == 0) {
+                cout << "--------------------------------" << endl;
                 cout << "Minimal way:" << endl;
                 for (int x = 0; x < nodesCount; x++) {
                     cout << nodes[dataFinal[x]*2] << " " << nodes[(dataFinal[x]*2) + 1] << endl;
                 }
-                cout << "Distance: " << minimalDistace << endl << endl;
-
+                cout << "Distance: " << minimalDistace << endl;
+                cout << "States searched: " << statesTried << endl;
+                cout << "Seconds to search: " << time(NULL) - seconds << endl;
+                cout << "--------------------------------" << endl;
                 cout << "Exporting to file plot" << endl;
+
                 ofstream exportFile;
                 exportFile.open("plot");
                 for (int x = 0; x < nodesCount; x++) {
                     exportFile << nodes[dataFinal[x]*2] << " " << nodes[(dataFinal[x]*2) + 1] << endl;
                 }
                 exportFile.close();
+                cout << "--------------------------------" << endl;
+                cout << "--------------DONE--------------" << endl;
                 break;
             }
 
