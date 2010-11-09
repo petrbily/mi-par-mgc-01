@@ -30,6 +30,7 @@ using namespace std;
 #define     STATUS_WORKING         1
 #define     STATUS_NODATA          2
 #define     STATUS_ANSWERPENDING   3
+#define     STATUS_TERMINATE       4
 
 /*** GLOBAL VARIABLES ***/
 int * nodes;
@@ -121,11 +122,11 @@ bool generateDistances() {
 double itemDistance(int * data) {
     double distance = 0;
     int x = 1, y;
-    while (x < (stackItemSize-1)) {
+    while (x < (stackItemSize - 1)) {
         while (data[x] == 0) {
             x++;
         }
-        y = x+1;
+        y = x + 1;
         while (data[y] == 0) {
             y++;
         }
@@ -246,6 +247,7 @@ int main(int argc, char** argv) {
     int checkMessages = 0; //counter if is time to check arrived messages
     int sendMinimalMessages = 1; //counter if is time to send a minimal way update
     int checkMessagesEvery = CHECK_MAX_INT; //default interval to check messages and minimal way update
+    int myTokenColor = MSG_TOKEN_WHITE;
 
     //prepare variables for network communication
     int randomProcess;
@@ -334,6 +336,7 @@ int main(int argc, char** argv) {
                                 cout << myProcessId << ": Data request from " << msgStatus.MPI_SOURCE << " received. Time: " << checkMessagesEvery << endl;
                                 popBottom(data);
                                 MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, msgStatus.MPI_SOURCE, MSG_WORK_SENT, MPI_COMM_WORLD);
+                                myTokenColor = MSG_TOKEN_BLACK;
                             }
                             break;
 
@@ -374,28 +377,30 @@ int main(int argc, char** argv) {
                             cout << myProcessId << ": White token from " << msgStatus.MPI_SOURCE << " received." << endl;
                             if (myProcessId == 0) { //This is the end my only friend
                                 //Terminate other threads
-                                for (int x = 0; x < processCount; x++) {
-                                    if (x != myProcessId) {
-                                        MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, x, MSG_FINISH, MPI_COMM_WORLD);
+                                for (int x = 1; x < processCount; x++) {
+                                    MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, x, MSG_FINISH, MPI_COMM_WORLD);
+                                }
+                                //Wait for confirmation and results from others
+                                minimalDistace = itemDistance(dataFinal);
+                                dataPointer = &dataFinal[0];
+                                for (int x = 1; x < processCount; x++) {
+                                    MPI_Recv(&dataTemp, stackItemSize * sizeof (data), MPI_CHAR, x, MSG_FINISH, MPI_COMM_WORLD, &msgStatus);
+                                    cout << myProcessId << ": Last data from " << msgStatus.MPI_SOURCE << " received." << endl;
+                                    cout << myProcessId << ": Last data ";
+                                    for (int y = 0; y < stackItemSize; y++) {
+                                        cout << dataTemp[y] << " ";
                                     }
-                                }
-                                //Receive last data from node with comuted minimal way
-                                MPI_Recv(&dataTemp, stackItemSize * sizeof (data), MPI_CHAR, minimalDistanceSource, MSG_MINIMAL_DATA, MPI_COMM_WORLD, &msgStatus);
-                                cout << myProcessId << ": Last data from " << msgStatus.MPI_SOURCE << " received." << endl;
-                                cout << myProcessId << ": Last data ";
-                                for (int y = 0; y < stackItemSize; y++) {
-                                    cout << dataTemp[y] << " ";
-                                }
-                                cout << endl;
-                                //Check root minimal distance and received minimal distance
-                                if (itemDistance(dataTemp) > itemDistance(dataFinal)) {
-                                    minimalDistace = itemDistance(dataFinal);
-                                    cout << myProcessId << ": Remote distance won: " << minimalDistace << endl;
-                                    dataPointer = &dataFinal[0];
-                                } else {
-                                    minimalDistace = itemDistance(dataTemp);
-                                    cout << myProcessId << ": Local distance won: " << minimalDistace << endl;
-                                    dataPointer = &dataTemp[0];
+                                    cout << endl;
+                                    //Check root minimal distance and received minimal distance
+                                    if (dataTemp[0] >= 0 && dataTemp[0] <= stackItemSize) {
+                                        if (itemDistance(dataTemp) < itemDistance(dataFinal)) {
+                                            minimalDistace = itemDistance(dataTemp);
+                                            cout << myProcessId << ": Remote distance won: " << minimalDistace << endl;
+                                            for (int x = 0; x < stackItemSize; x++) {
+                                                dataFinal[x] = dataTemp[x];
+                                            }
+                                        }
+                                    }
                                 }
                                 cout << myProcessId << ": Computation data ";
                                 for (int y = 0; y < stackItemSize; y++) {
@@ -420,10 +425,21 @@ int main(int argc, char** argv) {
                                 exportFile.close();
                                 cout << myProcessId << ": --------------------------------" << endl;
                                 cout << myProcessId << ": --------------DONE--------------" << endl;
+
+                                //Free memory
+                                delete [] distances;
+                                delete [] nodes;
+                                delete [] localStack;
+                                cout << myProcessId << ": Allocated memory freed." << endl;
+
+                                /* shut down MPI */
+                                MPI_Finalize();
+
                                 return 0;
                             } else {
-                                if (status == STATUS_WORKING) {
+                                if (status == STATUS_WORKING || myTokenColor == MSG_TOKEN_BLACK) {
                                     MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, ((myProcessId + 1) % processCount), MSG_TOKEN_BLACK, MPI_COMM_WORLD);
+                                    myTokenColor = MSG_TOKEN_WHITE;
                                 } else {
                                     MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, ((myProcessId + 1) % processCount), MSG_TOKEN_WHITE, MPI_COMM_WORLD);
                                 }
@@ -441,8 +457,17 @@ int main(int argc, char** argv) {
                             //Final message, we're done
                         case MSG_FINISH:
                             cout << myProcessId << ": Termination from " << msgStatus.MPI_SOURCE << " received - hurray!." << endl;
-                            MPI_Send(dataFinal, stackItemSize * sizeof (data), MPI_CHAR, 0, MSG_MINIMAL_DATA, MPI_COMM_WORLD);
+                            MPI_Send(dataFinal, stackItemSize * sizeof (data), MPI_CHAR, 0, MSG_FINISH, MPI_COMM_WORLD);
                             cout << myProcessId << ": Last message sent to root, good bye blue sky." << endl;
+
+                            //Free memory
+                            delete [] distances;
+                            delete [] nodes;
+                            delete [] localStack;
+                            cout << myProcessId << ": Allocated memory freed." << endl;
+
+                            /* shut down MPI */
+                            MPI_Finalize();
                             return 0;
                             break;
                         default:
@@ -477,6 +502,16 @@ int main(int argc, char** argv) {
                 exportFile.close();
                 cout << myProcessId << ": --------------------------------" << endl;
                 cout << myProcessId << ": --------------DONE--------------" << endl;
+
+                //Free memory
+                delete [] distances;
+                delete [] nodes;
+                delete [] localStack;
+                cout << myProcessId << ": Allocated memory freed." << endl;
+
+                /* shut down MPI */
+                MPI_Finalize();
+
                 return 0;
             }
         }
