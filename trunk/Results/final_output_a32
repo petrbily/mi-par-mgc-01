@@ -1,0 +1,949 @@
+3: Shortest Hamilton's path. Reading from file.
+5: Shortest Hamilton's path. Reading from file.
+4: Shortest Hamilton's path. Reading from file.
+16: Shortest Hamilton's path. Reading from file.
+17: Shortest Hamilton's path. Reading from file.
+27: Shortest Hamilton's path. Reading from file.
+29: Shortest Hamilton's path. Reading from file.
+22: Shortest Hamilton's path. Reading from file.
+5: 16 nodes will be loaded.
+5: Node on 3x12 loaded.
+5: Node on -15x21 loaded.
+5: Node on 8x6 loaded.
+5: Node on -8x-8 loaded.
+5: Node on -15x9 loaded.
+5: Node on -9x0 loaded.
+5: Node on -1x-23 loaded.
+5: Node on 10x-12 loaded.
+5: Node on -7x-2 loaded.
+5: Node on -6x-13 loaded.
+5: Node on 2x21 loaded.
+5: Node on 12x17 loaded.
+5: Node on 5x-5 loaded.
+5: Node on -6x7 loaded.
+5: Node on -20x-17 loaded.
+5: Node on -21x-13 loaded.
+5: Nodes loaded, searching shortest way.
+5: Distances pregenerated, searching firts minimal way.
+5: Search completed, running paralel algorithm.
+11: Shortest Hamilton's path. Reading from file.
+3: 16 nodes will be loaded.
+3: Node on 3x12 loaded.
+3: Node on -15x21 loaded.
+3: Node on 8x6 loaded.
+3: Node on -8x-8 loaded.
+3: Node on -15x9 loaded.
+3: Node on -9x0 loaded.
+3: Node on -1x-23 loaded.
+3: Node on 10x-12 loaded.
+3: Node on -7x-2 loaded.
+3: Node on -6x-13 loaded.
+3: Node on 2x21 loaded.
+3: Node on 12x17 loaded.
+3: Node on 5x-5 loaded.
+3: Node on -6x7 loaded.
+3: Node on -20x-17 loaded.
+3: Node on -21x-13 loaded.
+3: Nodes loaded, searching shortest way.
+3: Distances pregenerated, searching firts minimal way.
+3: Search completed, running paralel algorithm.
+25: Shortest Hamilton's path. Reading from file.
+7: Shortest Hamilton's path. Reading from file.
+4: 16 nodes will be loaded.
+4: Node on 3x12 loaded.
+4: Node on -15x21 loaded.
+4: Node on 8x6 loaded.
+4: Node on -8x-8 loaded.
+4: Node on -15x9 loaded.
+4: Node on -9x0 loaded.
+4: Node on -1x-23 loaded.
+4: Node on 10x-12 loaded.
+4: Node on -7x-2 loaded.
+4: Node on -6x-13 loaded.
+4: Node on 2x21 loaded.
+4: Node on 12x17 loaded.
+4: Node on 5x-5 loaded.
+4: Node on -6x7 loaded.
+4: Node on -20x-17 loaded.
+4: Node on -21x-13 loaded.
+4: Nodes loaded, searching shortest way.
+4: Distances pregenerated, searching firts minimal way.
+4: Search completed, running paralel algorithm.
+30: Shortest Hamilton's path. Reading from file.
+8: Shortest Hamilton's path. Reading from file.
+26: Shortest Hamilton's path. Reading from file.
+16: 16 nodes will be loaded.
+16: Node on 3x12 loaded.
+16: Node on -15x21 loaded.
+16: Node on 8x6 loaded.
+16: Node on -8x-8 loaded.
+16: Node on -15x9 loaded.
+16: Node on -9x0 loaded.
+16: Node on -1x-23 loaded.
+16: Node on 10x-12 loaded.
+16: Node on -7x-2 loaded.
+16: Node on -6x-13 loaded.
+16: Node on 2x21 loaded.
+16: Node on 12x17 loaded.
+16: Node on 5x-5 loaded.
+16: Node on -6x7 loaded.
+16: Node on -20x-17 loaded.
+16: Node on -21x-13 loaded.
+16: Nodes loaded, searching shortest way.
+16: Distances pregenerated, searching firts minimal way.
+16: Search completed, running paralel algorithm.
+17: 16 nodes will be loaded.
+17: Node on 3x12 loaded.
+17: Node on -15x21 loaded.
+17: Node on 8x6 loaded.
+17: Node on -8x-8 loaded.
+17: Node on -15x9 loaded.
+17: Node on -9x0 loaded.
+17: Node on -1x-23 loaded.
+17: Node on 10x-12 loaded.
+17: Node on -7x-2 loaded.
+17: Node on -6x-13 loaded.
+17: Node on 2x21 loaded.
+17: Node on 12x17 loaded.
+17: Node on 5x-5 loaded.
+17: Node on -6x7 loaded.
+17: Node on -20x-17 loaded.
+17: Node on -21x-13 loaded.
+17: Nodes loaded, searching shortest way.
+17: Distances pregenerated, searching firts minimal way.
+17: Search completed, running paralel algorithm.
+24: Shortest Hamilton's path. Reading from file.
+31: Shortest Hamilton's path. Reading from file.
+11: 16 nodes will be loaded.
+11: Node on 3x12 loaded.
+11: Node on -15x21 loaded.
+11: Node on 8x6 loaded.
+11: Node on -8x-8 loaded.
+11: Node on -15x9 loaded.
+11: Node on -9x0 loaded.
+11: Node on -1x-23 loaded.
+11: Node on 10x-12 loaded.
+11: Node on -7x-2 loaded.
+11: Node on -6x-13 loaded.
+11: Node on 2x21 loaded.
+11: Node on 12x17 loaded.
+11: Node on 5x-5 loaded.
+11: Node on -6x7 loaded.
+11: Node on -20x-17 loaded.
+11: Node on -21x-13 loaded.
+11: Nodes loaded, searching shortest way.
+7: 16 nodes will be loaded.
+7: Node on 3x12 loaded.
+7: Node on -15x21 loaded.
+7: Node on 8x6 loaded.
+7: Node on -8x-8 loaded.
+7: Node on -15x9 loaded.
+7: Node on -9x0 loaded.
+7: Node on -1x-23 loaded.
+7: Node on 10x-12 loaded.
+7: Node on -7x-2 loaded.
+7: Node on -6x-13 loaded.
+7: Node on 2x21 loaded.
+7: Node on 12x17 loaded.
+7: Node on 5x-5 loaded.
+7: Node on -6x7 loaded.
+7: Node on -20x-17 loaded.
+7: Node on -21x-13 loaded.
+7: Nodes loaded, searching shortest way.
+7: Distances pregenerated, searching firts minimal way.
+7: Search completed, running paralel algorithm.
+12: Shortest Hamilton's path. Reading from file.
+22: 16 nodes will be loaded.
+22: Node on 3x12 loaded.
+22: Node on -15x21 loaded.
+22: Node on 8x6 loaded.
+22: Node on -8x-8 loaded.
+22: Node on -15x9 loaded.
+22: Node on -9x0 loaded.
+22: Node on -1x-23 loaded.
+22: Node on 10x-12 loaded.
+22: Node on -7x-2 loaded.
+22: Node on -6x-13 loaded.
+22: Node on 2x21 loaded.
+22: Node on 12x17 loaded.
+22: Node on 5x-5 loaded.
+22: Node on -6x7 loaded.
+22: Node on -20x-17 loaded.
+22: Node on -21x-13 loaded.
+22: Nodes loaded, searching shortest way.
+22: Distances pregenerated, searching firts minimal way.
+22: Search completed, running paralel algorithm.
+28: Shortest Hamilton's path. Reading from file.
+11: Distances pregenerated, searching firts minimal way.
+11: Search completed, running paralel algorithm.
+24: 16 nodes will be loaded.
+24: Node on 3x12 loaded.
+24: Node on -15x21 loaded.
+24: Node on 8x6 loaded.
+24: Node on -8x-8 loaded.
+24: Node on -15x9 loaded.
+24: Node on -9x0 loaded.
+24: Node on -1x-23 loaded.
+24: Node on 10x-12 loaded.
+24: Node on -7x-2 loaded.
+24: Node on -6x-13 loaded.
+24: Node on 2x21 loaded.
+24: Node on 12x17 loaded.
+24: Node on 5x-5 loaded.
+24: Node on -6x7 loaded.
+24: Node on -20x-17 loaded.
+24: Node on -21x-13 loaded.
+24: Nodes loaded, searching shortest way.
+24: Distances pregenerated, searching firts minimal way.
+24: Search completed, running paralel algorithm.
+14: Shortest Hamilton's path. Reading from file.
+8: 16 nodes will be loaded.
+8: Node on 3x12 loaded.
+8: Node on -15x21 loaded.
+8: Node on 8x6 loaded.
+8: Node on -8x-8 loaded.
+8: Node on -15x9 loaded.
+8: Node on -9x0 loaded.
+8: Node on -1x-23 loaded.
+8: Node on 10x-12 loaded.
+8: Node on -7x-2 loaded.
+8: Node on -6x-13 loaded.
+8: Node on 2x21 loaded.
+8: Node on 12x17 loaded.
+8: Node on 5x-5 loaded.
+8: Node on -6x7 loaded.
+8: Node on -20x-17 loaded.
+8: Node on -21x-13 loaded.
+8: Nodes loaded, searching shortest way.
+20: Shortest Hamilton's path. Reading from file.
+8: Distances pregenerated, searching firts minimal way.
+8: Search completed, running paralel algorithm.
+14: 16 nodes will be loaded.
+14: Node on 3x12 loaded.
+14: Node on -15x21 loaded.
+14: Node on 8x6 loaded.
+14: Node on -8x-8 loaded.
+14: Node on -15x9 loaded.
+14: Node on -9x0 loaded.
+14: Node on -1x-23 loaded.
+14: Node on 10x-12 loaded.
+14: Node on -7x-2 loaded.
+14: Node on -6x-13 loaded.
+14: Node on 2x21 loaded.
+14: Node on 12x17 loaded.
+14: Node on 5x-5 loaded.
+14: Node on -6x7 loaded.
+14: Node on -20x-17 loaded.
+14: Node on -21x-13 loaded.
+14: Nodes loaded, searching shortest way.
+20: 16 nodes will be loaded.
+12: 16 nodes will be loaded.
+12: Node on 3x12 loaded.
+12: Node on -15x21 loaded.
+12: Node on 8x6 loaded.
+12: Node on -8x-8 loaded.
+12: Node on -15x9 loaded.
+12: Node on -9x0 loaded.
+12: Node on -1x-23 loaded.
+12: Node on 10x-12 loaded.
+12: Node on -7x-2 loaded.
+12: Node on -6x-13 loaded.
+12: Node on 2x21 loaded.
+12: Node on 12x17 loaded.
+12: Node on 5x-5 loaded.
+12: Node on -6x7 loaded.
+12: Node on -20x-17 loaded.
+12: Node on -21x-13 loaded.
+12: Nodes loaded, searching shortest way.
+9: Shortest Hamilton's path. Reading from file.
+23: Shortest Hamilton's path. Reading from file.
+14: Distances pregenerated, searching firts minimal way.
+14: Search completed, running paralel algorithm.
+20: Node on 3x12 loaded.
+20: Node on -15x21 loaded.
+20: Node on 8x6 loaded.
+20: Node on -8x-8 loaded.
+20: Node on -15x9 loaded.
+20: Node on -9x0 loaded.
+20: Node on -1x-23 loaded.
+20: Node on 10x-12 loaded.
+20: Node on -7x-2 loaded.
+20: Node on -6x-13 loaded.
+20: Node on 2x21 loaded.
+20: Node on 12x17 loaded.
+20: Node on 5x-5 loaded.
+20: Node on -6x7 loaded.
+20: Node on -20x-17 loaded.
+20: Node on -21x-13 loaded.
+20: Nodes loaded, searching shortest way.
+20: Distances pregenerated, searching firts minimal way.
+20: Search completed, running paralel algorithm.
+12: Distances pregenerated, searching firts minimal way.
+12: Search completed, running paralel algorithm.
+19: Shortest Hamilton's path. Reading from file.
+10: Shortest Hamilton's path. Reading from file.
+23: 16 nodes will be loaded.
+23: Node on 3x12 loaded.
+23: Node on -15x21 loaded.
+23: Node on 8x6 loaded.
+23: Node on -8x-8 loaded.
+23: Node on -15x9 loaded.
+23: Node on -9x0 loaded.
+23: Node on -1x-23 loaded.
+23: Node on 10x-12 loaded.
+23: Node on -7x-2 loaded.
+23: Node on -6x-13 loaded.
+23: Node on 2x21 loaded.
+23: Node on 12x17 loaded.
+23: Node on 5x-5 loaded.
+23: Node on -6x7 loaded.
+23: Node on -20x-17 loaded.
+23: Node on -21x-13 loaded.
+23: Nodes loaded, searching shortest way.
+9: 16 nodes will be loaded.
+9: Node on 3x12 loaded.
+9: Node on -15x21 loaded.
+9: Node on 8x6 loaded.
+9: Node on -8x-8 loaded.
+9: Node on -15x9 loaded.
+9: Node on -9x0 loaded.
+9: Node on -1x-23 loaded.
+9: Node on 10x-12 loaded.
+9: Node on -7x-2 loaded.
+9: Node on -6x-13 loaded.
+9: Node on 2x21 loaded.
+9: Node on 12x17 loaded.
+9: Node on 5x-5 loaded.
+9: Node on -6x7 loaded.
+9: Node on -20x-17 loaded.
+9: Node on -21x-13 loaded.
+9: Nodes loaded, searching shortest way.
+23: Distances pregenerated, searching firts minimal way.
+23: Search completed, running paralel algorithm.
+9: Distances pregenerated, searching firts minimal way.
+9: Search completed, running paralel algorithm.
+15: Shortest Hamilton's path. Reading from file.
+10: 16 nodes will be loaded.
+10: Node on 3x12 loaded.
+10: Node on -15x21 loaded.
+10: Node on 8x6 loaded.
+10: Node on -8x-8 loaded.
+10: Node on -15x9 loaded.
+10: Node on -9x0 loaded.
+10: Node on -1x-23 loaded.
+10: Node on 10x-12 loaded.
+10: Node on -7x-2 loaded.
+10: Node on -6x-13 loaded.
+10: Node on 2x21 loaded.
+10: Node on 12x17 loaded.
+10: Node on 5x-5 loaded.
+10: Node on -6x7 loaded.
+10: Node on -20x-17 loaded.
+10: Node on -21x-13 loaded.
+10: Nodes loaded, searching shortest way.
+21: Shortest Hamilton's path. Reading from file.
+19: 16 nodes will be loaded.
+19: Node on 3x12 loaded.
+19: Node on -15x21 loaded.
+19: Node on 8x6 loaded.
+19: Node on -8x-8 loaded.
+19: Node on -15x9 loaded.
+19: Node on -9x0 loaded.
+19: Node on -1x-23 loaded.
+19: Node on 10x-12 loaded.
+19: Node on -7x-2 loaded.
+19: Node on -6x-13 loaded.
+19: Node on 2x21 loaded.
+19: Node on 12x17 loaded.
+19: Node on 5x-5 loaded.
+19: Node on -6x7 loaded.
+19: Node on -20x-17 loaded.
+19: Node on -21x-13 loaded.
+19: Nodes loaded, searching shortest way.
+19: Distances pregenerated, searching firts minimal way.
+19: Search completed, running paralel algorithm.
+21: 16 nodes will be loaded.
+21: Node on 3x12 loaded.
+21: Node on -15x21 loaded.
+21: Node on 8x6 loaded.
+21: Node on -8x-8 loaded.
+21: Node on -15x9 loaded.
+21: Node on -9x0 loaded.
+21: Node on -1x-23 loaded.
+21: Node on 10x-12 loaded.
+21: Node on -7x-2 loaded.
+21: Node on -6x-13 loaded.
+21: Node on 2x21 loaded.
+21: Node on 12x17 loaded.
+18: Shortest Hamilton's path. Reading from file.
+21: Node on 5x-5 loaded.
+21: Node on -6x7 loaded.
+21: Node on -20x-17 loaded.
+21: Node on -21x-13 loaded.
+21: Nodes loaded, searching shortest way.
+21: Distances pregenerated, searching firts minimal way.
+21: Search completed, running paralel algorithm.
+13: Shortest Hamilton's path. Reading from file.
+10: Distances pregenerated, searching firts minimal way.
+10: Search completed, running paralel algorithm.
+15: 16 nodes will be loaded.
+15: Node on 3x12 loaded.
+15: Node on -15x21 loaded.
+15: Node on 8x6 loaded.
+15: Node on -8x-8 loaded.
+15: Node on -15x9 loaded.
+15: Node on -9x0 loaded.
+15: Node on -1x-23 loaded.
+15: Node on 10x-12 loaded.
+15: Node on -7x-2 loaded.
+15: Node on -6x-13 loaded.
+15: Node on 2x21 loaded.
+15: Node on 12x17 loaded.
+15: Node on 5x-5 loaded.
+15: Node on -6x7 loaded.
+15: Node on -20x-17 loaded.
+15: Node on -21x-13 loaded.
+15: Nodes loaded, searching shortest way.
+18: 16 nodes will be loaded.
+18: Node on 3x12 loaded.
+18: Node on -15x21 loaded.
+18: Node on 8x6 loaded.
+18: Node on -8x-8 loaded.
+18: Node on -15x9 loaded.
+18: Node on -9x0 loaded.
+18: Node on -1x-23 loaded.
+18: Node on 10x-12 loaded.
+18: Node on -7x-2 loaded.
+18: Node on -6x-13 loaded.
+18: Node on 2x21 loaded.
+18: Node on 12x17 loaded.
+18: Node on 5x-5 loaded.
+18: Node on -6x7 loaded.
+18: Node on -20x-17 loaded.
+18: Node on -21x-13 loaded.
+18: Nodes loaded, searching shortest way.
+6: Shortest Hamilton's path. Reading from file.
+13: 16 nodes will be loaded.
+13: Node on 3x12 loaded.
+13: Node on -15x21 loaded.
+13: Node on 8x6 loaded.
+13: Node on -8x-8 loaded.
+13: Node on -15x9 loaded.
+13: Node on -9x0 loaded.
+13: Node on -1x-23 loaded.
+13: Node on 10x-12 loaded.
+13: Node on -7x-2 loaded.
+13: Node on -6x-13 loaded.
+13: Node on 2x21 loaded.
+13: Node on 12x17 loaded.
+13: Node on 5x-5 loaded.
+13: Node on -6x7 loaded.
+13: Node on -20x-17 loaded.
+13: Node on -21x-13 loaded.
+13: Nodes loaded, searching shortest way.
+18: Distances pregenerated, searching firts minimal way.
+18: Search completed, running paralel algorithm.
+15: Distances pregenerated, searching firts minimal way.
+15: Search completed, running paralel algorithm.
+13: Distances pregenerated, searching firts minimal way.
+13: Search completed, running paralel algorithm.
+6: 16 nodes will be loaded.
+6: Node on 3x12 loaded.
+6: Node on -15x21 loaded.
+6: Node on 8x6 loaded.
+6: Node on -8x-8 loaded.
+6: Node on -15x9 loaded.
+6: Node on -9x0 loaded.
+6: Node on -1x-23 loaded.
+6: Node on 10x-12 loaded.
+6: Node on -7x-2 loaded.
+6: Node on -6x-13 loaded.
+6: Node on 2x21 loaded.
+6: Node on 12x17 loaded.
+6: Node on 5x-5 loaded.
+6: Node on -6x7 loaded.
+6: Node on -20x-17 loaded.
+6: Node on -21x-13 loaded.
+6: Nodes loaded, searching shortest way.
+6: Distances pregenerated, searching firts minimal way.
+6: Search completed, running paralel algorithm.
+29: 16 nodes will be loaded.
+29: Node on 3x12 loaded.
+29: Node on -15x21 loaded.
+29: Node on 8x6 loaded.
+29: Node on -8x-8 loaded.
+29: Node on -15x9 loaded.
+29: Node on -9x0 loaded.
+29: Node on -1x-23 loaded.
+29: Node on 10x-12 loaded.
+29: Node on -7x-2 loaded.
+29: Node on -6x-13 loaded.
+29: Node on 2x21 loaded.
+29: Node on 12x17 loaded.
+29: Node on 5x-5 loaded.
+29: Node on -6x7 loaded.
+29: Node on -20x-17 loaded.
+29: Node on -21x-13 loaded.
+29: Nodes loaded, searching shortest way.
+30: 16 nodes will be loaded.
+30: Node on 3x12 loaded.
+30: Node on -15x21 loaded.
+30: Node on 8x6 loaded.
+30: Node on -8x-8 loaded.
+30: Node on -15x9 loaded.
+30: Node on -9x0 loaded.
+30: Node on -1x-23 loaded.
+30: Node on 10x-12 loaded.
+30: Node on -7x-2 loaded.
+30: Node on -6x-13 loaded.
+30: Node on 2x21 loaded.
+30: Node on 12x17 loaded.
+30: Node on 5x-5 loaded.
+30: Node on -6x7 loaded.
+30: Node on -20x-17 loaded.
+30: Node on -21x-13 loaded.
+30: Nodes loaded, searching shortest way.
+27: 16 nodes will be loaded.
+27: Node on 3x12 loaded.
+27: Node on -15x21 loaded.
+27: Node on 8x6 loaded.
+27: Node on -8x-8 loaded.
+27: Node on -15x9 loaded.
+27: Node on -9x0 loaded.
+27: Node on -1x-23 loaded.
+27: Node on 10x-12 loaded.
+27: Node on -7x-2 loaded.
+27: Node on -6x-13 loaded.
+27: Node on 2x21 loaded.
+27: Node on 12x17 loaded.
+27: Node on 5x-5 loaded.
+27: Node on -6x7 loaded.
+27: Node on -20x-17 loaded.
+27: Node on -21x-13 loaded.
+27: Nodes loaded, searching shortest way.
+25: 16 nodes will be loaded.
+25: Node on 3x12 loaded.
+25: Node on -15x21 loaded.
+25: Node on 8x6 loaded.
+25: Node on -8x-8 loaded.
+25: Node on -15x9 loaded.
+25: Node on -9x0 loaded.
+25: Node on -1x-23 loaded.
+25: Node on 10x-12 loaded.
+25: Node on -7x-2 loaded.
+25: Node on -6x-13 loaded.
+25: Node on 2x21 loaded.
+25: Node on 12x17 loaded.
+25: Node on 5x-5 loaded.
+25: Node on -6x7 loaded.
+25: Node on -20x-17 loaded.
+25: Node on -21x-13 loaded.
+25: Nodes loaded, searching shortest way.
+26: 16 nodes will be loaded.
+26: Node on 3x12 loaded.
+26: Node on -15x21 loaded.
+26: Node on 8x6 loaded.
+26: Node on -8x-8 loaded.
+26: Node on -15x9 loaded.
+26: Node on -9x0 loaded.
+26: Node on -1x-23 loaded.
+26: Node on 10x-12 loaded.
+26: Node on -7x-2 loaded.
+26: Node on -6x-13 loaded.
+26: Node on 2x21 loaded.
+26: Node on 12x17 loaded.
+26: Node on 5x-5 loaded.
+26: Node on -6x7 loaded.
+26: Node on -20x-17 loaded.
+26: Node on -21x-13 loaded.
+26: Nodes loaded, searching shortest way.
+28: 16 nodes will be loaded.
+28: Node on 3x12 loaded.
+28: Node on -15x21 loaded.
+28: Node on 8x6 loaded.
+28: Node on -8x-8 loaded.
+28: Node on -15x9 loaded.
+28: Node on -9x0 loaded.
+28: Node on -1x-23 loaded.
+28: Node on 10x-12 loaded.
+28: Node on -7x-2 loaded.
+28: Node on -6x-13 loaded.
+28: Node on 2x21 loaded.
+28: Node on 12x17 loaded.
+28: Node on 5x-5 loaded.
+28: Node on -6x7 loaded.
+28: Node on -20x-17 loaded.
+28: Node on -21x-13 loaded.
+28: Nodes loaded, searching shortest way.
+31: 16 nodes will be loaded.
+31: Node on 3x12 loaded.
+31: Node on -15x21 loaded.
+31: Node on 8x6 loaded.
+31: Node on -8x-8 loaded.
+31: Node on -15x9 loaded.
+31: Node on -9x0 loaded.
+31: Node on -1x-23 loaded.
+31: Node on 10x-12 loaded.
+31: Node on -7x-2 loaded.
+31: Node on -6x-13 loaded.
+31: Node on 2x21 loaded.
+31: Node on 12x17 loaded.
+31: Node on 5x-5 loaded.
+31: Node on -6x7 loaded.
+31: Node on -20x-17 loaded.
+31: Node on -21x-13 loaded.
+31: Nodes loaded, searching shortest way.
+0: Shortest Hamilton's path. Reading from file.
+1: Shortest Hamilton's path. Reading from file.
+2: Shortest Hamilton's path. Reading from file.
+0: 16 nodes will be loaded.
+0: Node on 3x12 loaded.
+0: Node on -15x21 loaded.
+0: Node on 8x6 loaded.
+0: Node on -8x-8 loaded.
+0: Node on -15x9 loaded.
+0: Node on -9x0 loaded.
+0: Node on -1x-23 loaded.
+0: Node on 10x-12 loaded.
+0: Node on -7x-2 loaded.
+0: Node on -6x-13 loaded.
+0: Node on 2x21 loaded.
+0: Node on 12x17 loaded.
+0: Node on 5x-5 loaded.
+0: Node on -6x7 loaded.
+0: Node on -20x-17 loaded.
+0: Node on -21x-13 loaded.
+0: Nodes loaded, searching shortest way.
+1: 16 nodes will be loaded.
+1: Node on 3x12 loaded.
+1: Node on -15x21 loaded.
+1: Node on 8x6 loaded.
+1: Node on -8x-8 loaded.
+1: Node on -15x9 loaded.
+1: Node on -9x0 loaded.
+1: Node on -1x-23 loaded.
+1: Node on 10x-12 loaded.
+1: Node on -7x-2 loaded.
+1: Node on -6x-13 loaded.
+1: Node on 2x21 loaded.
+1: Node on 12x17 loaded.
+1: Node on 5x-5 loaded.
+1: Node on -6x7 loaded.
+1: Node on -20x-17 loaded.
+1: Node on -21x-13 loaded.
+1: Nodes loaded, searching shortest way.
+2: 16 nodes will be loaded.
+2: Node on 3x12 loaded.
+2: Node on -15x21 loaded.
+2: Node on 8x6 loaded.
+2: Node on -8x-8 loaded.
+2: Node on -15x9 loaded.
+2: Node on -9x0 loaded.
+2: Node on -1x-23 loaded.
+2: Node on 10x-12 loaded.
+2: Node on -7x-2 loaded.
+2: Node on -6x-13 loaded.
+2: Node on 2x21 loaded.
+2: Node on 12x17 loaded.
+2: Node on 5x-5 loaded.
+2: Node on -6x7 loaded.
+2: Node on -20x-17 loaded.
+2: Node on -21x-13 loaded.
+2: Nodes loaded, searching shortest way.
+26: Distances pregenerated, searching firts minimal way.
+26: Search completed, running paralel algorithm.
+29: Distances pregenerated, searching firts minimal way.
+29: Search completed, running paralel algorithm.
+27: Distances pregenerated, searching firts minimal way.
+27: Search completed, running paralel algorithm.
+31: Distances pregenerated, searching firts minimal way.
+31: Search completed, running paralel algorithm.
+30: Distances pregenerated, searching firts minimal way.
+30: Search completed, running paralel algorithm.
+25: Distances pregenerated, searching firts minimal way.
+25: Search completed, running paralel algorithm.
+28: Distances pregenerated, searching firts minimal way.
+28: Search completed, running paralel algorithm.
+1: Distances pregenerated, searching firts minimal way.
+1: Search completed, running paralel algorithm.
+0: Distances pregenerated, searching firts minimal way.
+0: Search completed, running paralel algorithm.
+2: Distances pregenerated, searching firts minimal way.
+2: Search completed, running paralel algorithm.
+0: New minimal distance found: 285.694
+0: New minimal distance found: 282.909
+0: New minimal distance found: 282.617
+0: New minimal distance found: 278.735
+0: New minimal distance found: 278.207
+0: New minimal distance found: 271.765
+0: New minimal distance found: 268.98
+0: New minimal distance found: 264.213
+0: New minimal distance found: 261.428
+0: New minimal distance found: 257.782
+0: New minimal distance found: 254.225
+0: New minimal distance found: 253.424
+0: New minimal distance found: 250.939
+0: New minimal distance found: 248.998
+1: New minimal distance found: 300.225
+1: New minimal distance found: 299.798
+1: New minimal distance found: 284.532
+1: New minimal distance found: 284.449
+1: New minimal distance found: 278.744
+1: New minimal distance found: 278.317
+1: New minimal distance found: 268.761
+1: New minimal distance found: 262.313
+1: New minimal distance found: 259.379
+1: New minimal distance found: 254.761
+1: New minimal distance found: 247.953
+3: New minimal distance found: 333.115
+3: New minimal distance found: 330.331
+3: New minimal distance found: 317.85
+3: New minimal distance found: 316.895
+3: New minimal distance found: 294.188
+3: New minimal distance found: 287.143
+3: New minimal distance found: 286.174
+3: New minimal distance found: 283.917
+3: New minimal distance found: 281.355
+3: New minimal distance found: 280.928
+4: New minimal distance found: 285.094
+4: New minimal distance found: 282.736
+4: New minimal distance found: 282.652
+4: New minimal distance found: 271.165
+4: New minimal distance found: 268.807
+4: New minimal distance found: 263.613
+4: New minimal distance found: 261.254
+5: New minimal distance found: 276.704
+5: New minimal distance found: 273.919
+4: New minimal distance found: 256.805
+5: New minimal distance found: 273.626
+4: New minimal distance found: 254.446
+5: New minimal distance found: 269.745
+5: New minimal distance found: 269.217
+5: New minimal distance found: 251.641
+5: New minimal distance found: 248.856
+5: New minimal distance found: 247.315
+5: New minimal distance found: 244.53
+4: New minimal distance found: 250.843
+4: New minimal distance found: 249.174
+4: New minimal distance found: 240.884
+4: New minimal distance found: 237.327
+4: New minimal distance found: 236.526
+4: New minimal distance found: 234.041
+0: New minimal distance found: 240.549
+0: New minimal distance found: 232.595
+0: New minimal distance found: 218.079
+0: New minimal distance found: 215.874
+0: New minimal distance found: 212.576
+6: New minimal distance found: 245.629
+26: New minimal distance found: 231.587
+18: New minimal distance found: 231.971
+8: New minimal distance found: 243.737
+18: New minimal distance found: 231.169
+18: New minimal distance found: 228.685
+7: New minimal distance found: 246.139
+7: New minimal distance found: 232.1
+25: New minimal distance found: 214.005
+16: New minimal distance found: 228.07
+8: New minimal distance found: 240.511
+16: New minimal distance found: 222.242
+18: New minimal distance found: 218.294
+22: New minimal distance found: 226.744
+15: New minimal distance found: 231.291
+19: New minimal distance found: 231.767
+15: New minimal distance found: 229.349
+19: New minimal distance found: 226.944
+14: New minimal distance found: 229.799
+20: New minimal distance found: 229.119
+8: New minimal distance found: 222.749
+21: New minimal distance found: 226.29
+8: New minimal distance found: 219.523
+17: New minimal distance found: 230.569
+23: New minimal distance found: 226.73
+12: New minimal distance found: 231.968
+13: New minimal distance found: 232.3
+13: New minimal distance found: 230.255
+10: New minimal distance found: 230.283
+11: New minimal distance found: 231.086
+24: New minimal distance found: 213.072
+9: New minimal distance found: 215.81
+29: New minimal distance found: 210.941
+31: New minimal distance found: 211.365
+28: New minimal distance found: 211.979
+27: New minimal distance found: 212.133
+30: New minimal distance found: 210.78
+1: New minimal distance found: 244.396
+1: New minimal distance found: 209.331
+1: New minimal distance found: 208.25
+1: New minimal distance found: 206.045
+1: New minimal distance found: 205.928
+1: New minimal distance found: 203.932
+1: New minimal distance found: 201.507
+1: New minimal distance found: 200.613
+1: New minimal distance found: 199.866
+1: New minimal distance found: 198.742
+1: New minimal distance found: 198.52
+1: New minimal distance found: 197.623
+1: New minimal distance found: 194.204
+3: New minimal distance found: 246.588
+3: New minimal distance found: 246.238
+2: New minimal distance found: 233.2
+4: New minimal distance found: 193.896
+3: New minimal distance found: 193.73
+4: New minimal distance found: 191.673
+1: New minimal distance found: 189.736
+1: New minimal distance found: 189.094
+4: New minimal distance found: 188.235
+7: New minimal distance found: 185.997
+4: New minimal distance found: 184.662
+4: New minimal distance found: 182.666
+4: New minimal distance found: 182.025
+4: New minimal distance found: 178.918
+4: New minimal distance found: 177.306
+25: New minimal distance found: 179.461
+4: New minimal distance found: 177.104
+4: New minimal distance found: 174.431
+4: New minimal distance found: 169.499
+26: New minimal distance found: 172.152
+26: New minimal distance found: 170.72
+26: New minimal distance found: 167.89
+26: New minimal distance found: 166.406
+4: New minimal distance found: 165.88
+25: New minimal distance found: 165.745
+25: New minimal distance found: 165.574
+26: New minimal distance found: 163.628
+26: New minimal distance found: 163.457
+26: New minimal distance found: 162.145
+26: New minimal distance found: 161.974
+21: New minimal distance found: 213.067
+29: New minimal distance found: 160.92
+29: New minimal distance found: 159.204
+29: New minimal distance found: 156.657
+29: New minimal distance found: 152.396
+29: New minimal distance found: 152.225
+29: New minimal distance found: 151.166
+29: New minimal distance found: 150.094
+16: New minimal distance found: 148.629
+3: New minimal distance found: 148.155
+4: New minimal distance found: 147.372
+4: New minimal distance found: 145.376
+4: New minimal distance found: 144.735
+24: New minimal distance found: 143.252
+1: Termination from 0 received - hurray!.
+1: Last message sent to root, good bye blue sky.
+6: Termination from 0 received - hurray!.
+6: Last message sent to root, good bye blue sky.
+5: Termination from 0 received - hurray!.
+25: Termination from 0 received - hurray!.
+25: Last message sent to root, good bye blue sky.
+18: Termination from 0 received - hurray!.
+18: Last message sent to root, good bye blue sky.
+7: Termination from 0 received - hurray!.
+7: Last message sent to root, good bye blue sky.
+3: Termination from 0 received - hurray!.
+3: Last message sent to root, good bye blue sky.
+27: Termination from 0 received - hurray!.
+27: Last message sent to root, good bye blue sky.
+20: Termination from 0 received - hurray!.
+20: Last message sent to root, good bye blue sky.
+14: Termination from 0 received - hurray!.
+14: Last message sent to root, good bye blue sky.
+4: Termination from 0 received - hurray!.
+4: Last message sent to root, good bye blue sky.
+30: Termination from 0 received - hurray!.
+30: Last message sent to root, good bye blue sky.
+17: Termination from 0 received - hurray!.
+17: Last message sent to root, good bye blue sky.
+13: Termination from 0 received - hurray!.
+13: Last message sent to root, good bye blue sky.
+5: Last message sent to root, good bye blue sky.
+29: Termination from 0 received - hurray!.
+29: Last message sent to root, good bye blue sky.
+21: Termination from 0 received - hurray!.
+21: Last message sent to root, good bye blue sky.
+15: Termination from 0 received - hurray!.
+15: Last message sent to root, good bye blue sky.
+28: Termination from 0 received - hurray!.
+28: Last message sent to root, good bye blue sky.
+19: Termination from 0 received - hurray!.
+19: Last message sent to root, good bye blue sky.
+8: Termination from 0 received - hurray!.
+8: Last message sent to root, good bye blue sky.
+26: Termination from 0 received - hurray!.
+26: Last message sent to root, good bye blue sky.
+23: Termination from 0 received - hurray!.
+23: Last message sent to root, good bye blue sky.
+10: Termination from 0 received - hurray!.
+10: Last message sent to root, good bye blue sky.
+31: Termination from 0 received - hurray!.
+31: Last message sent to root, good bye blue sky.
+22: Termination from 0 received - hurray!.
+22: Last message sent to root, good bye blue sky.
+11: Termination from 0 received - hurray!.
+11: Last message sent to root, good bye blue sky.
+24: Termination from 0 received - hurray!.
+9: Termination from 0 received - hurray!.
+9: Last message sent to root, good bye blue sky.
+24: Last message sent to root, good bye blue sky.
+12: Termination from 0 received - hurray!.
+12: Last message sent to root, good bye blue sky.
+16: Termination from 0 received - hurray!.
+16: Last message sent to root, good bye blue sky.
+2: Termination from 0 received - hurray!.
+2: Last message sent to root, good bye blue sky.
+2: Allocated memory freed.
+0: Computation data 16 16 15 10 4 9 6 14 5 2 11 12 1 3 13 8 7 
+0: --------------------------------
+1: Allocated memory freed.
+0: Minimal way:
+-21 -13
+-20 -17
+-6 -13
+-8 -8
+-7 -2
+-9 0
+-6 7
+-15 9
+-15 21
+2 21
+12 17
+3 12
+8 6
+5 -5
+10 -12
+-1 -23
+0: Distance: 143.252
+0: Seconds to search: 173
+0: --------------------------------
+0: Exporting to file plot
+10: Allocated memory freed.
+6: Allocated memory freed.
+3: Allocated memory freed.
+17: Allocated memory freed.
+14: Allocated memory freed.
+4: Allocated memory freed.
+26: Allocated memory freed.
+16: Allocated memory freed.
+9: Allocated memory freed.
+5: Allocated memory freed.
+29: Allocated memory freed.
+22: Allocated memory freed.
+8: Allocated memory freed.
+30: Allocated memory freed.
+13: Allocated memory freed.
+18: Allocated memory freed.
+11: Allocated memory freed.
+21: Allocated memory freed.
+12: Allocated memory freed.
+19: Allocated memory freed.
+20: Allocated memory freed.
+24: Allocated memory freed.
+25: Allocated memory freed.
+7: Allocated memory freed.
+27: Allocated memory freed.
+23: Allocated memory freed.
+15: Allocated memory freed.
+28: Allocated memory freed.
+31: Allocated memory freed.
+0: --------------------------------
+0: --------------DONE--------------
+0: Allocated memory freed.

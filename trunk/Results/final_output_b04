@@ -1,0 +1,863 @@
+1: Shortest Hamilton's path. Reading from file.
+2: Shortest Hamilton's path. Reading from file.
+3: Shortest Hamilton's path. Reading from file.
+0: Shortest Hamilton's path. Reading from file.
+2: 15 nodes will be loaded.
+2: Node on 3x12 loaded.
+2: Node on -15x21 loaded.
+2: Node on 8x6 loaded.
+2: Node on -8x-8 loaded.
+2: Node on -15x9 loaded.
+2: Node on -9x0 loaded.
+2: Node on -1x-23 loaded.
+2: Node on 10x-12 loaded.
+2: Node on -7x-2 loaded.
+2: Node on -6x-13 loaded.
+2: Node on 2x21 loaded.
+2: Node on 12x17 loaded.
+2: Node on 5x-5 loaded.
+2: Node on -6x7 loaded.
+2: Node on -20x-17 loaded.
+2: Nodes loaded, searching shortest way.
+3: 15 nodes will be loaded.
+1: 15 nodes will be loaded.
+1: Node on 3x12 loaded.
+1: Node on -15x21 loaded.
+3: Node on 3x12 loaded.
+3: Node on -15x21 loaded.
+3: Node on 8x6 loaded.
+1: Node on 8x6 loaded.
+1: Node on -8x-8 loaded.
+1: Node on -15x9 loaded.
+1: Node on -9x0 loaded.
+1: Node on -1x-23 loaded.
+1: Node on 10x-12 loaded.
+3: Node on -8x-8 loaded.
+3: Node on -15x9 loaded.
+3: Node on -9x0 loaded.
+3: Node on -1x-23 loaded.
+3: Node on 10x-12 loaded.
+3: Node on -7x-2 loaded.
+1: Node on -7x-2 loaded.
+1: Node on -6x-13 loaded.
+1: Node on 2x21 loaded.
+1: Node on 12x17 loaded.
+2: Distances pregenerated, searching firts minimal way.
+2: Search completed, running paralel algorithm.
+3: Node on -6x-13 loaded.
+3: Node on 2x21 loaded.
+1: Node on 5x-5 loaded.
+1: Node on -6x7 loaded.
+1: Node on -20x-17 loaded.
+1: Nodes loaded, searching shortest way.
+2: Sending request to process 0
+3: Node on 12x17 loaded.
+3: Node on 5x-5 loaded.
+3: Node on -6x7 loaded.
+3: Node on -20x-17 loaded.
+3: Nodes loaded, searching shortest way.
+1: Distances pregenerated, searching firts minimal way.
+1: Search completed, running paralel algorithm.
+0: 15 nodes will be loaded.
+0: Node on 3x12 loaded.
+3: Distances pregenerated, searching firts minimal way.
+3: Search completed, running paralel algorithm.
+0: Node on -15x21 loaded.
+0: Node on 8x6 loaded.
+0: Node on -8x-8 loaded.
+0: Node on -15x9 loaded.
+0: Node on -9x0 loaded.
+1: Sending request to process 0
+0: Node on -1x-23 loaded.
+0: Node on 10x-12 loaded.
+0: Node on -7x-2 loaded.
+0: Node on -6x-13 loaded.
+0: Node on 2x21 loaded.
+0: Node on 12x17 loaded.
+3: Sending request to process 0
+0: Node on 5x-5 loaded.
+0: Node on -6x7 loaded.
+0: Node on -20x-17 loaded.
+0: Nodes loaded, searching shortest way.
+0: Distances pregenerated, searching firts minimal way.
+0: Search completed, running paralel algorithm.
+0: New minimal distance found: 281.571
+0: New minimal distance found: 279.022
+0: New minimal distance found: 274.612
+0: New minimal distance found: 267.642
+0: New minimal distance found: 266.434
+0: New minimal distance found: 260.09
+0: New minimal distance found: 254.187
+0: New minimal distance found: 252.887
+0: New minimal distance found: 248.861
+0: Data request from 2 received. Time: 300
+2: Work from 0 accepted.
+2: Data 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2: New minimal distance found: 298.46
+2: New minimal distance found: 283.194
+0: New minimal distance found: 244.875
+2: New minimal distance found: 283.111
+2: New minimal distance found: 267.498
+2: New minimal distance found: 258.718
+2: New minimal distance found: 258.041
+2: New minimal distance found: 251.166
+2: New minimal distance found: 244.358
+2: New minimal distance found: 243.058
+2: New minimal distance found: 239.032
+0: New minimal distance found: 239.21
+0: Data request from 1 received. Time: 300
+1: Work from 0 accepted.
+1: Data 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1: New minimal distance found: 280.971
+1: New minimal distance found: 280.887
+1: New minimal distance found: 267.042
+1: New minimal distance found: 265.841
+2: New minimal distance found: 229.381
+1: New minimal distance found: 259.489
+1: New minimal distance found: 252.681
+1: New minimal distance found: 248.422
+1: New minimal distance found: 245.25
+1: New minimal distance found: 244.096
+1: New minimal distance found: 242.643
+1: New minimal distance found: 238.771
+1: New minimal distance found: 237.317
+1: Sending minimal distance update: 237.317
+0: New minimal distance found: 230.517
+3: New minimal distance received: 237.317 from 1
+0: Sending minimal distance update: 230.517
+0: Data request from 3 received. Time: 300
+3: New minimal distance received: 230.517 from 0
+2: New minimal distance found: 220.688
+3: Work from 0 accepted.
+3: Data 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+2: Sending minimal distance update: 220.688
+1: New minimal distance found: 227.666
+3: New minimal distance received: 220.688 from 2
+1: New minimal distance found: 218.973
+3: New minimal distance found: 213.619
+3: Sending minimal distance update: 213.619
+1: Sending minimal distance update: 218.973
+0: New minimal distance received: 220.688 from 2
+1: New minimal distance received: 213.619 from 3
+2: New minimal distance found: 220.006
+2: Sending minimal distance update: 220.006
+2: New minimal distance received: 213.619 from 3
+0: New minimal distance received: 213.619 from 3
+3: New minimal distance found: 212.937
+3: Sending minimal distance update: 212.937
+2: New minimal distance found: 213.145
+2: New minimal distance received: 212.937 from 3
+0: New minimal distance received: 212.937 from 3
+1: New minimal distance received: 212.937 from 3
+2: New minimal distance found: 212.523
+1: New minimal distance found: 211.431
+1: Sending minimal distance update: 211.431
+3: New minimal distance found: 212.816
+0: New minimal distance received: 211.431 from 1
+3: New minimal distance received: 211.431 from 1
+2: Sending minimal distance update: 212.523
+2: New minimal distance received: 211.431 from 1
+1: New minimal distance found: 210.808
+3: New minimal distance found: 206.076
+3: Sending minimal distance update: 206.076
+1: Sending minimal distance update: 210.808
+1: New minimal distance received: 206.076 from 3
+0: New minimal distance received: 206.076 from 3
+3: New minimal distance found: 205.454
+2: New minimal distance received: 206.076 from 3
+3: Sending minimal distance update: 205.454
+0: New minimal distance received: 205.454 from 3
+1: New minimal distance received: 205.454 from 3
+2: New minimal distance received: 205.454 from 3
+1: New minimal distance found: 204.969
+3: New minimal distance found: 201.712
+3: New minimal distance found: 201.653
+2: New minimal distance found: 203.908
+3: Sending minimal distance update: 201.653
+1: Sending minimal distance update: 204.969
+3: New minimal distance found: 201.452
+3: New minimal distance found: 199.615
+2: New minimal distance received: 201.653 from 3
+1: New minimal distance received: 201.653 from 3
+0: New minimal distance received: 201.653 from 3
+3: Sending minimal distance update: 199.615
+1: New minimal distance received: 199.615 from 3
+0: New minimal distance received: 199.615 from 3
+2: New minimal distance received: 199.615 from 3
+3: New minimal distance found: 196.838
+3: Sending minimal distance update: 196.838
+0: New minimal distance received: 196.838 from 3
+2: New minimal distance received: 196.838 from 3
+1: New minimal distance received: 196.838 from 3
+3: New minimal distance found: 193.4
+3: Sending minimal distance update: 193.4
+2: New minimal distance received: 193.4 from 3
+1: New minimal distance received: 193.4 from 3
+0: New minimal distance received: 193.4 from 3
+3: New minimal distance found: 192.505
+3: Sending minimal distance update: 192.505
+2: New minimal distance received: 192.505 from 3
+1: New minimal distance received: 192.505 from 3
+0: New minimal distance received: 192.505 from 3
+3: New minimal distance found: 192.33
+3: Sending minimal distance update: 192.33
+1: New minimal distance received: 192.33 from 3
+2: New minimal distance received: 192.33 from 3
+0: New minimal distance received: 192.33 from 3
+3: New minimal distance found: 191.223
+3: Sending minimal distance update: 191.223
+0: New minimal distance received: 191.223 from 3
+1: New minimal distance received: 191.223 from 3
+2: New minimal distance received: 191.223 from 3
+3: New minimal distance found: 190.984
+3: Sending minimal distance update: 190.984
+1: New minimal distance received: 190.984 from 3
+0: New minimal distance received: 190.984 from 3
+2: New minimal distance received: 190.984 from 3
+3: New minimal distance found: 187.784
+3: Sending minimal distance update: 187.784
+2: New minimal distance received: 187.784 from 3
+0: New minimal distance received: 187.784 from 3
+1: New minimal distance received: 187.784 from 3
+3: New minimal distance found: 187.273
+3: Sending minimal distance update: 187.273
+1: New minimal distance received: 187.273 from 3
+0: New minimal distance received: 187.273 from 3
+2: New minimal distance received: 187.273 from 3
+2: New minimal distance found: 185.173
+2: Sending minimal distance update: 185.173
+1: New minimal distance received: 185.173 from 2
+0: New minimal distance received: 185.173 from 2
+3: New minimal distance received: 185.173 from 2
+1: New minimal distance found: 183.458
+1: Sending minimal distance update: 183.458
+3: New minimal distance received: 183.458 from 1
+0: New minimal distance received: 183.458 from 1
+2: New minimal distance received: 183.458 from 1
+3: New minimal distance found: 183.385
+3: Sending minimal distance update: 183.385
+2: New minimal distance received: 183.385 from 3
+0: New minimal distance received: 183.385 from 3
+1: New minimal distance received: 183.385 from 3
+3: New minimal distance found: 178.104
+3: Sending minimal distance update: 178.104
+1: New minimal distance received: 178.104 from 3
+0: New minimal distance received: 178.104 from 3
+2: New minimal distance received: 178.104 from 3
+3: New minimal distance found: 176.84
+3: New minimal distance found: 175.228
+3: Sending minimal distance update: 175.228
+1: New minimal distance received: 175.228 from 3
+0: New minimal distance received: 175.228 from 3
+2: New minimal distance received: 175.228 from 3
+3: New minimal distance found: 172.353
+3: Sending minimal distance update: 172.353
+1: New minimal distance received: 172.353 from 3
+2: New minimal distance received: 172.353 from 3
+0: New minimal distance received: 172.353 from 3
+3: New minimal distance found: 171.414
+3: Sending minimal distance update: 171.414
+0: New minimal distance received: 171.414 from 3
+1: New minimal distance received: 171.414 from 3
+2: New minimal distance received: 171.414 from 3
+3: New minimal distance found: 170.604
+3: Sending minimal distance update: 170.604
+1: New minimal distance received: 170.604 from 3
+0: New minimal distance received: 170.604 from 3
+2: New minimal distance received: 170.604 from 3
+3: New minimal distance found: 167.42
+3: New minimal distance found: 167.361
+3: Sending minimal distance update: 167.361
+0: New minimal distance received: 167.361 from 3
+2: New minimal distance received: 167.361 from 3
+1: New minimal distance received: 167.361 from 3
+3: New minimal distance found: 166.723
+3: Sending minimal distance update: 166.723
+2: New minimal distance received: 166.723 from 3
+0: New minimal distance received: 166.723 from 3
+1: New minimal distance received: 166.723 from 3
+3: New minimal distance found: 162.829
+3: New minimal distance found: 161.958
+3: Sending minimal distance update: 161.958
+1: New minimal distance received: 161.958 from 3
+2: New minimal distance received: 161.958 from 3
+0: New minimal distance received: 161.958 from 3
+3: New minimal distance found: 161.563
+3: New minimal distance found: 160.693
+3: Sending minimal distance update: 160.693
+0: New minimal distance received: 160.693 from 3
+2: New minimal distance received: 160.693 from 3
+1: New minimal distance received: 160.693 from 3
+3: New minimal distance found: 158.144
+3: New minimal distance found: 157.274
+3: Sending minimal distance update: 157.274
+2: New minimal distance received: 157.274 from 3
+0: New minimal distance received: 157.274 from 3
+1: New minimal distance received: 157.274 from 3
+3: New minimal distance found: 157.264
+3: New minimal distance found: 156.393
+3: Sending minimal distance update: 156.393
+1: New minimal distance received: 156.393 from 3
+0: New minimal distance received: 156.393 from 3
+2: New minimal distance received: 156.393 from 3
+2: New minimal distance found: 155.019
+2: New minimal distance found: 154.149
+2: Sending minimal distance update: 154.149
+0: New minimal distance received: 154.149 from 2
+3: New minimal distance received: 154.149 from 2
+1: New minimal distance received: 154.149 from 2
+3: New minimal distance found: 153.465
+3: Sending minimal distance update: 153.465
+1: New minimal distance received: 153.465 from 3
+0: New minimal distance received: 153.465 from 3
+2: New minimal distance received: 153.465 from 3
+3: New minimal distance found: 151.316
+3: Sending minimal distance update: 151.316
+0: New minimal distance received: 151.316 from 3
+1: New minimal distance received: 151.316 from 3
+2: New minimal distance received: 151.316 from 3
+1: New minimal distance found: 148.985
+1: Sending minimal distance update: 148.985
+3: New minimal distance received: 148.985 from 1
+2: New minimal distance received: 148.985 from 1
+0: New minimal distance received: 148.985 from 1
+1: New minimal distance found: 148.684
+1: New minimal distance found: 144.233
+1: Sending minimal distance update: 144.233
+0: New minimal distance received: 144.233 from 1
+2: New minimal distance received: 144.233 from 1
+3: New minimal distance received: 144.233 from 1
+3: New minimal distance found: 140.813
+3: Sending minimal distance update: 140.813
+1: New minimal distance received: 140.813 from 3
+0: New minimal distance received: 140.813 from 3
+2: New minimal distance received: 140.813 from 3
+2: Sending request to process 1
+1: Data request from 2 received. Time: 300
+2: Work from 1 accepted.
+2: Data 3 2 1 3 0 0 0 0 0 0 0 0 0 0 0 0 
+2: Sending request to process 0
+0: Data request from 2 received. Time: 300
+2: Work from 0 accepted.
+2: Data 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 
+1: Sending request to process 0
+0: Data request from 1 received. Time: 300
+1: Work from 0 accepted.
+1: Data 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 2 2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+1: New minimal distance found: 139.129
+1: Sending minimal distance update: 139.129
+0: New minimal distance received: 139.129 from 1
+2: New minimal distance received: 139.129 from 1
+3: New minimal distance received: 139.129 from 1
+1: Sending request to process 2
+2: Data request from 1 received. Time: 300
+1: Work from 2 accepted.
+1: Data 2 2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 
+2: Sending request to process 0
+0: Data request from 2 received. Time: 300
+2: Work from 0 accepted.
+2: Data 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+1: Sending request to process 0
+0: Data request from 1 received. Time: 300
+1: Work from 0 accepted.
+1: Data 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+3: Sending request to process 2
+2: Data request from 3 received. Time: 300
+3: Work from 2 accepted.
+3: Data 2 2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 
+2: Sending request to process 0
+0: Data request from 2 received. Time: 300
+2: Work from 0 accepted.
+2: Data 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+1: Sending request to process 0
+0: Data request from 1 received. Time: 300
+1: Work from 0 accepted.
+1: Data 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 2 2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 2 2 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 2 0 2 0 0 0 0 0 0 0 0 1 0 0 0 0 
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 2 0 2 0 0 0 0 0 0 0 0 0 1 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 2 0 0 2 0 0 0 0 0 0 0 1 0 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 2 0 0 0 2 0 0 0 0 0 0 1 0 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 2 0 0 0 0 2 0 0 0 0 0 1 0 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 2 0 0 0 0 0 2 0 0 0 0 1 0 0 0 0 
+1: Sending request to process 0
+0: Data request from 1 received. Time: 300
+1: Work from 0 accepted.
+1: Data 2 0 0 2 0 0 0 0 0 0 0 0 1 0 0 0 
+2: Sending request to process 1
+1: Data request from 2 received. Time: 300
+2: Work from 1 accepted.
+2: Data 3 3 0 2 0 0 0 0 0 0 0 0 1 0 0 0 
+2: Sending request to process 1
+1: Data request from 2 received. Time: 300
+2: Work from 1 accepted.
+2: Data 3 0 3 2 0 0 0 0 0 0 0 0 1 0 0 0 
+2: Sending request to process 0
+0: Data request from 2 received. Time: 300
+2: Work from 0 accepted.
+2: Data 2 0 0 0 2 0 0 0 0 0 0 0 1 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 3 0 0 2 3 0 0 0 0 0 0 0 1 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 3 0 0 2 0 3 0 0 0 0 0 0 1 0 0 0 
+0: Sending request to process 2
+0: No work - sending white token.
+2: Data request from 0 received. Time: 300
+0: Work from 2 accepted.
+0: Data 3 3 0 0 2 0 0 0 0 0 0 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 4 3 4 0 2 0 0 0 0 0 0 0 1 0 0 0 
+3: Sending request to process 2
+2: Data request from 3 received. Time: 300
+3: Work from 2 accepted.
+3: Data 3 0 3 0 2 0 0 0 0 0 0 0 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 3 0 0 2 0 0 3 0 0 0 0 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 3 0 0 2 0 0 0 3 0 0 0 0 1 0 0 0 
+0: Sending request to process 2
+0: No work - sending white token.
+2: Data request from 0 received. Time: 300
+0: Work from 2 accepted.
+0: Data 3 0 0 3 2 0 0 0 0 0 0 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 4 4 0 3 2 0 0 0 0 0 0 0 1 0 0 0 
+3: Sending request to process 2
+2: Data request from 3 received. Time: 300
+3: Work from 2 accepted.
+3: Data 3 0 0 0 2 3 0 0 0 0 0 0 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 3 0 0 2 0 0 0 0 3 0 0 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+3: Sending request to process 2
+2: Data request from 3 received. Time: 300
+3: Work from 2 accepted.
+3: Data 3 0 0 0 2 0 3 0 0 0 0 0 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 3 0 0 2 0 0 0 0 0 3 0 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+3: Sending request to process 2
+2: Data request from 3 received. Time: 300
+3: Work from 2 accepted.
+3: Data 3 0 0 0 2 0 0 3 0 0 0 0 1 0 0 0 
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 4 4 0 2 0 0 0 0 0 3 0 0 1 0 0 0 
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 4 0 4 2 0 0 0 0 0 3 0 0 1 0 0 0 
+3: Sending request to process 2
+2: Data request from 3 received. Time: 300
+3: Work from 2 accepted.
+3: Data 3 0 0 0 2 0 0 0 3 0 0 0 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 4 4 0 2 0 0 0 0 0 0 3 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 4 0 4 2 0 0 0 0 0 0 3 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 4 0 0 2 4 0 0 0 0 0 3 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+3: Sending request to process 1
+0: Black token from 3 received.
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 4 0 0 2 0 4 0 0 0 0 3 0 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 4 0 0 2 0 0 4 0 0 0 3 0 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 4 0 0 2 0 0 0 4 0 0 3 0 1 0 0 0 
+1: Sending request to process 3
+3: Data request from 1 received. Time: 300
+1: Work from 3 accepted.
+1: Data 5 5 0 2 0 0 0 4 0 0 3 0 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 6 5 6 2 0 0 0 4 0 0 3 0 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: White token from 0 received.
+1: Sending request to process 0
+0: Data request from 1 received - but no data to give. Time: 300
+1: Data request from 0 received - but no data to give. Time: 300
+0: Sending request to process 3
+0: No work - sending white token.
+1: White token from 0 received.
+1: Sending request to process 2
+1: White token from 0 received.
+3: Data request from 0 received. Time: 300
+0: Work from 3 accepted.
+0: Data 5 0 5 2 0 0 0 4 0 0 3 0 1 0 0 0 
+2: Black token from 1 received.
+3: Black token from 2 received.
+2: White token from 1 received.
+3: Sending request to process 1
+1: Data request from 3 received - but no data to give. Time: 300
+3: Black token from 2 received.
+3: Sending request to process 2
+0: Black token from 3 received.
+2: Data request from 1 received. Time: 300
+1: Work from 2 accepted.
+1: Data 3 0 0 0 2 0 0 0 0 3 0 0 1 0 0 0 
+0: Black token from 3 received.
+2: White token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+2: Data request from 3 received. Time: 300
+3: Work from 2 accepted.
+3: Data 3 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 
+0: Sending request to process 2
+0: No work - sending white token.
+1: White token from 0 received.
+2: Data request from 0 received. Time: 300
+0: Work from 2 accepted.
+0: Data 3 0 0 0 2 0 0 0 0 0 0 3 1 0 0 0 
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+1: Sending request to process 0
+0: Data request from 1 received. Time: 300
+1: Work from 0 accepted.
+1: Data 4 4 0 0 2 0 0 0 0 0 0 3 1 0 0 0 
+1: Sending request to process 2
+2: Data request from 1 received. Time: 300
+1: Work from 2 accepted.
+1: Data 4 4 0 0 2 0 0 0 0 0 0 0 1 3 0 0 
+2: Sending request to process 1
+1: Sending request to process 2
+2: Data request from 1 received - but no data to give. Time: 300
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 1
+1: Sending request to process 2
+2: Data request from 1 received - but no data to give. Time: 300
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 1
+1: Sending request to process 3
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 1
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 1
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 1
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 3
+3: Data request from 1 received. Time: 300
+1: Work from 3 accepted.
+1: Data 4 4 0 0 2 0 0 0 0 0 3 0 1 0 0 0 
+3: Data request from 2 received. Time: 300
+2: Work from 3 accepted.
+2: Data 4 0 4 0 2 0 0 0 0 0 3 0 1 0 0 0 
+1: Sending request to process 0
+3: Sending request to process 1
+0: Data request from 1 received. Time: 300
+1: Data request from 3 received - but no data to give. Time: 300
+3: Sending request to process 2
+1: Work from 0 accepted.
+1: Data 4 0 4 0 2 0 0 0 0 0 0 3 1 0 0 0 
+2: Sending request to process 0
+2: Data request from 3 received - but no data to give. Time: 300
+3: Sending request to process 0
+0: Data request from 2 received. Time: 300
+2: Work from 0 accepted.
+2: Data 4 0 0 4 2 0 0 0 0 0 0 3 1 0 0 0 
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 4 0 0 0 2 4 0 0 0 0 0 3 1 0 0 0 
+2: Sending request to process 1
+1: Data request from 2 received. Time: 300
+2: Work from 1 accepted.
+2: Data 5 5 4 0 2 0 0 0 0 0 0 3 1 0 0 0 
+2: Sending request to process 0
+1: Sending request to process 0
+0: Data request from 2 received. Time: 300
+2: Work from 0 accepted.
+2: Data 4 0 0 0 2 0 4 0 0 0 0 3 1 0 0 0 
+0: Data request from 1 received. Time: 300
+1: Work from 0 accepted.
+1: Data 4 0 0 0 2 0 0 4 0 0 0 3 1 0 0 0 
+3: Sending request to process 1
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 5 5 0 0 2 0 0 4 0 0 0 3 1 0 0 0 
+3: Sending request to process 0
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 5 5 0 0 2 0 0 0 4 0 0 3 1 0 0 0 
+0: Sending request to process 1
+0: No work - sending white token.
+1: Data request from 0 received. Time: 300
+0: Work from 1 accepted.
+0: Data 5 0 5 0 2 0 0 4 0 0 0 3 1 0 0 0 
+1: White token from 0 received.
+2: Black token from 1 received.
+3: Black token from 2 received.
+3: Sending request to process 0
+0: Black token from 3 received.
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 6 6 5 0 2 0 0 4 0 0 0 3 1 0 0 0 
+0: Sending request to process 2
+0: No work - sending white token.
+3: Sending request to process 0
+0: Data request from 3 received - but no data to give. Time: 300
+3: Sending request to process 0
+0: Data request from 3 received - but no data to give. Time: 300
+3: Sending request to process 0
+0: Data request from 3 received - but no data to give. Time: 300
+3: Sending request to process 1
+1: White token from 0 received.
+2: Data request from 0 received. Time: 300
+0: Work from 2 accepted.
+0: Data 5 5 0 0 2 0 4 0 0 0 0 3 1 0 0 0 
+1: Data request from 3 received. Time: 300
+3: Work from 1 accepted.
+3: Data 5 0 0 5 2 0 0 4 0 0 0 3 1 0 0 0 
+2: Black token from 1 received.
+3: Black token from 2 received.
+0: Black token from 3 received.
+0: Sending request to process 2
+0: No work - sending white token.
+1: Sending request to process 2
+1: White token from 0 received.
+2: Data request from 0 received. Time: 300
+0: Work from 2 accepted.
+0: Data 5 0 5 0 2 0 4 0 0 0 0 3 1 0 0 0 
+2: Data request from 1 received. Time: 300
+1: Work from 2 accepted.
+1: Data 7 6 7 5 2 0 4 0 0 0 0 3 1 0 0 0 
+1: Sending request to process 3
+3: Data request from 1 received. Time: 300
+1: Work from 3 accepted.
+1: Data 6 6 0 5 2 0 0 4 0 0 0 3 1 0 0 0 
+2: Black token from 1 received.
+2: Sending request to process 3
+1: Sending request to process 2
+3: Black token from 2 received.
+2: Data request from 1 received - but no data to give. Time: 300
+1: Sending request to process 2
+2: Data request from 1 received - but no data to give. Time: 300
+3: Sending request to process 0
+1: Sending request to process 3
+3: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 0
+3: Data request from 1 received - but no data to give. Time: 300
+1: Sending request to process 0
+0: Black token from 3 received.
+0: Data request from 3 received. Time: 300
+3: Work from 0 accepted.
+3: Data 6 6 5 0 2 0 4 0 0 0 0 3 1 0 0 0 
+0: Sending request to process 2
+0: No work - sending white token.
+1: White token from 0 received.
+2: Data request from 0 received - but no data to give. Time: 300
+0: Data request from 2 received - but no data to give. Time: 300
+2: White token from 1 received.
+0: Data request from 1 received - but no data to give. Time: 300
+2: Sending request to process 0
+1: Sending request to process 0
+0: Sending request to process 3
+0: No work - sending white token.
+1: White token from 0 received.
+0: Data request from 2 received - but no data to give. Time: 300
+2: White token from 1 received.
+0: Data request from 1 received - but no data to give. Time: 300
+1: Sending request to process 0
+2: Sending request to process 1
+0: Data request from 1 received - but no data to give. Time: 300
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 1
+1: Sending request to process 0
+0: Data request from 1 received - but no data to give. Time: 300
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 1
+1: Sending request to process 0
+0: Data request from 1 received - but no data to give. Time: 300
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 3
+1: Sending request to process 0
+0: Data request from 1 received - but no data to give. Time: 300
+1: Sending request to process 0
+0: Data request from 1 received - but no data to give. Time: 300
+1: Sending request to process 0
+0: Data request from 1 received - but no data to give. Time: 300
+1: Sending request to process 3
+3: Sending request to process 0
+3: Black token from 2 received.
+0: Data request from 3 received - but no data to give. Time: 300
+3: Data request from 0 received - but no data to give. Time: 300
+0: Black token from 3 received.
+3: White token from 2 received.
+0: Sending request to process 2
+0: No work - sending white token.
+3: Data request from 2 received - but no data to give. Time: 300
+2: Data request from 0 received - but no data to give. Time: 300
+1: White token from 0 received.
+0: Black token from 3 received.
+3: Data request from 1 received - but no data to give. Time: 300
+0: Sending request to process 1
+0: No work - sending white token.
+2: Sending request to process 1
+1: Sending request to process 0
+3: Sending request to process 1
+2: White token from 1 received.
+0: Data request from 1 received - but no data to give. Time: 300
+1: Data request from 0 received - but no data to give. Time: 300
+0: Sending request to process 1
+0: No work - sending white token.
+3: White token from 2 received.
+1: Data request from 2 received - but no data to give. Time: 300
+2: Sending request to process 3
+0: White token from 3 received.
+1: White token from 0 received.
+3: Data request from 2 received - but no data to give. Time: 300
+2: White token from 1 received.
+1: Data request from 3 received - but no data to give. Time: 300
+2: Termination from 0 received - hurray!.
+2: Last message sent to root, good bye blue sky.
+3: Termination from 0 received - hurray!.
+3: Last message sent to root, good bye blue sky.
+1: Sending request to process 2
+1: Data request from 0 received - but no data to give. Time: 300
+1: White token from 0 received.
+1: Termination from 0 received - hurray!.
+1: Last message sent to root, good bye blue sky.
+0: Last data from 1 received.
+0: Last data 15 7 8 13 3 1 12 11 2 5 14 6 9 4 10 15 
+0: Remote distance won: 139.129
+0: Last data from 2 received.
+0: Last data 15 1 14 5 6 9 4 10 15 7 8 13 3 12 11 2 
+0: Last data from 3 received.
+0: Last data 15 12 11 1 3 13 8 7 15 10 4 9 6 14 5 2 
+3: Allocated memory freed.
+1: Allocated memory freed.
+0: Computation data 15 7 8 13 3 1 12 11 2 5 14 6 9 4 10 15 
+0: --------------------------------
+0: Minimal way:
+2: Allocated memory freed.
+-1 -23
+10 -12
+5 -5
+8 6
+3 12
+12 17
+2 21
+-15 21
+-15 9
+-6 7
+-9 0
+-7 -2
+-8 -8
+-6 -13
+-20 -17
+0: Distance: 139.129
+0: Seconds to search: 204
+0: --------------------------------
+0: Exporting to file plot
+0: --------------------------------
+0: --------------DONE--------------
+0: Allocated memory freed.
