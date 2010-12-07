@@ -176,7 +176,7 @@ int main(int argc, char** argv) {
     cout << myProcessId << ": Shortest Hamilton's path. Reading from file." << endl;
 
     //Open file
-    ifstream importFile("nodes");
+    ifstream importFile("nodes14");
     if (!importFile.is_open()) {
         cerr << "Cannot open file." << endl;
         return 1;
@@ -248,6 +248,9 @@ int main(int argc, char** argv) {
     int sendMinimalMessages = 1; //counter if is time to send a minimal way update
     int checkMessagesEvery = CHECK_MAX_INT; //default interval to check messages and minimal way update
     int myTokenColor = MSG_TOKEN_WHITE;
+    int totalDataMessages = 0;
+    int totalEndingMessages = 0;
+    int totalUpdateMessages = 0;
 
     //prepare variables for network communication
     int randomProcess;
@@ -285,13 +288,15 @@ int main(int argc, char** argv) {
             if (status == STATUS_NODATA) {
                 randomProcess = (++randomProcess % processCount); //add one to x and try next node
                 if (randomProcess != myProcessId) {
-                    cout << myProcessId << ": Sending request to process " << randomProcess << endl;
+                    //cout << myProcessId << ": Sending request to process " << randomProcess << endl;
                     MPI_Send(&data, stackItemSize * sizeof (data), MPI_CHAR, randomProcess, MSG_WORK_REQUEST, MPI_COMM_WORLD);
+		    totalDataMessages++;
 
                     //If this is root node, check if any node is in working state
                     if (myProcessId == 0) {
-                        cout << myProcessId << ": No work - sending white token." << endl;
+                        //cout << myProcessId << ": No work - sending white token." << endl;
                         MPI_Send(&data, stackItemSize * sizeof (data), MPI_CHAR, ((myProcessId + 1) % processCount), MSG_TOKEN_WHITE, MPI_COMM_WORLD);
+			totalEndingMessages++;
                     }
 
                     status = STATUS_ANSWERPENDING;
@@ -300,13 +305,14 @@ int main(int argc, char** argv) {
 
             //Check if is time to send update
             if ((sendMinimalMessages++ % (checkMessagesEvery * 5)) == 0 && (minimalDistace != lastMinimalDistance)) {
-                cout << myProcessId << ": Sending minimal distance update: " << minimalDistace << endl;
+                //cout << myProcessId << ": Sending minimal distance update: " << minimalDistace << endl;
                 for (int x = 0; x < sizeof (minimalDistace); x++) {
                     data[x] = ((char*) &minimalDistace)[x];
                 }
                 for (int x = 0; x < processCount; x++) {
                     if (x != myProcessId) {
                         MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, x, MSG_NEW_MINIMAL, MPI_COMM_WORLD);
+			totalUpdateMessages++;
                     }
                 }
                 lastMinimalDistance = minimalDistace;
@@ -329,25 +335,28 @@ int main(int argc, char** argv) {
 
                             //Send some data to work on
                         case MSG_WORK_REQUEST:
+			    totalDataMessages++;
                             if (stackPointer == stackBottom) {
-                                cout << myProcessId << ": Data request from " << msgStatus.MPI_SOURCE << " received - but no data to give. Time: " << checkMessagesEvery << endl;
+                                //cout << myProcessId << ": Data request from " << msgStatus.MPI_SOURCE << " received - but no data to give. Time: " << checkMessagesEvery << endl;
                                 MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, msgStatus.MPI_SOURCE, MSG_WORK_NOWORK, MPI_COMM_WORLD);
+				totalDataMessages++;
                             } else {
-                                cout << myProcessId << ": Data request from " << msgStatus.MPI_SOURCE << " received. Time: " << checkMessagesEvery << endl;
+                                //cout << myProcessId << ": Data request from " << msgStatus.MPI_SOURCE << " received. Time: " << checkMessagesEvery << endl;
                                 popBottom(data);
                                 MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, msgStatus.MPI_SOURCE, MSG_WORK_SENT, MPI_COMM_WORLD);
+				totalDataMessages++;
                                 myTokenColor = MSG_TOKEN_BLACK;
                             }
                             break;
 
                             //Work is here
                         case MSG_WORK_SENT:
-                            cout << myProcessId << ": Work from " << msgStatus.MPI_SOURCE << " accepted." << endl;
+                            /*cout << myProcessId << ": Work from " << msgStatus.MPI_SOURCE << " accepted." << endl;
                             cout << myProcessId << ": Data ";
                             for (int y = 0; y < stackItemSize; y++) {
                                 cout << data[y] << " ";
                             }
-                            cout << endl;
+                            cout << endl;*/
                             push(data); //Add new item to stack
                             status = STATUS_WORKING;
                             break;
@@ -361,6 +370,7 @@ int main(int argc, char** argv) {
 
                             //New minimal distance arrived
                         case MSG_NEW_MINIMAL:
+			    totalUpdateMessages++;
                             for (int x = 0; x < sizeof (minimalDistace); x++) {
                                 ((char*) &tempMinimalDistace)[x] = data[x];
                             }
@@ -368,17 +378,19 @@ int main(int argc, char** argv) {
                                 minimalDistace = tempMinimalDistace;
                                 lastMinimalDistance = tempMinimalDistace;
                                 minimalDistanceSource = msgStatus.MPI_SOURCE;
-                                cout << myProcessId << ": New minimal distance received: " << minimalDistace << " from " << msgStatus.MPI_SOURCE << endl;
+                                //cout << myProcessId << ": New minimal distance received: " << minimalDistace << " from " << msgStatus.MPI_SOURCE << endl;
                             }
                             break;
 
                             //White token arrived, chceck if we have data or we are root node
                         case MSG_TOKEN_WHITE:
-                            cout << myProcessId << ": White token from " << msgStatus.MPI_SOURCE << " received." << endl;
+			    totalEndingMessages++;
+                            //cout << myProcessId << ": White token from " << msgStatus.MPI_SOURCE << " received." << endl;
                             if (myProcessId == 0) { //This is the end my only friend
                                 //Terminate other threads
                                 for (int x = 1; x < processCount; x++) {
                                     MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, x, MSG_FINISH, MPI_COMM_WORLD);
+				    totalEndingMessages++;
                                 }
 
                                 //Wait for confirmation and results from others
@@ -386,17 +398,17 @@ int main(int argc, char** argv) {
                                 dataPointer = &dataFinal[0];
                                 for (int x = 1; x < processCount; x++) {
                                     MPI_Recv(&dataTemp, stackItemSize * sizeof (data), MPI_CHAR, x, MSG_FINISH, MPI_COMM_WORLD, &msgStatus);
-                                    cout << myProcessId << ": Last data from " << msgStatus.MPI_SOURCE << " received." << endl;
+                                    /*cout << myProcessId << ": Last data from " << msgStatus.MPI_SOURCE << " received." << endl;
                                     cout << myProcessId << ": Last data ";
                                     for (int y = 0; y < stackItemSize; y++) {
                                         cout << dataTemp[y] << " ";
                                     }
-                                    cout << endl;
+                                    cout << endl;*/
                                     //Check root minimal distance and received minimal distance
                                     if (dataTemp[0] > 0 && dataTemp[0] <= stackItemSize) {
                                         if (itemDistance(dataTemp) < itemDistance(dataFinal)) {
                                             minimalDistace = itemDistance(dataTemp);
-                                            cout << myProcessId << ": Remote distance won: " << minimalDistace << endl;
+                                            //cout << myProcessId << ": Remote distance won: " << minimalDistace << endl;
                                             for (int x = 0; x < stackItemSize; x++) {
                                                 dataFinal[x] = dataTemp[x];
                                             }
@@ -429,6 +441,8 @@ int main(int argc, char** argv) {
                                 exportFile.close();
                                 cout << myProcessId << ": --------------------------------" << endl;
                                 cout << myProcessId << ": --------------DONE--------------" << endl;
+				
+				cout << myProcessId << ": =DATA MSG:" << totalDataMessages << "=  =UPDATE MSG:" << totalUpdateMessages << "=  =END MSG:" << totalEndingMessages << "=" << endl;
 
                                 //Free memory
                                 delete [] distances;
@@ -441,6 +455,7 @@ int main(int argc, char** argv) {
 
                                 return 0;
                             } else {
+			        totalEndingMessages++;
                                 if (status == STATUS_WORKING || myTokenColor == MSG_TOKEN_BLACK) {
                                     MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, ((myProcessId + 1) % processCount), MSG_TOKEN_BLACK, MPI_COMM_WORLD);
                                     myTokenColor = MSG_TOKEN_WHITE;
@@ -452,8 +467,9 @@ int main(int argc, char** argv) {
 
                             //Black token arrived, just send it around or drop it
                         case MSG_TOKEN_BLACK:
-                            cout << myProcessId << ": Black token from " << msgStatus.MPI_SOURCE << " received." << endl;
+                            //cout << myProcessId << ": Black token from " << msgStatus.MPI_SOURCE << " received." << endl;
                             if (myProcessId != 0) {
+			        totalEndingMessages++;
                                 MPI_Send(data, stackItemSize * sizeof (data), MPI_CHAR, ((myProcessId + 1) % processCount), MSG_TOKEN_BLACK, MPI_COMM_WORLD);
                             }
                             break;
@@ -463,6 +479,7 @@ int main(int argc, char** argv) {
                             cout << myProcessId << ": Termination from " << msgStatus.MPI_SOURCE << " received - hurray!." << endl;
                             MPI_Send(dataFinal, stackItemSize * sizeof (data), MPI_CHAR, 0, MSG_FINISH, MPI_COMM_WORLD);
                             cout << myProcessId << ": Last message sent to root, good bye blue sky." << endl;
+			    cout << myProcessId << ": =DATA MSG:" << totalDataMessages << "=  =UPDATE MSG:" << totalUpdateMessages << "=  =END MSG:" << totalEndingMessages << "=" << endl;
 
                             MPI_Barrier(MPI_COMM_WORLD);
 
