@@ -1,0 +1,1 @@
+Search for Hamilton's path with minimal geometric length. C++ and MPI library for parallel computing is used.
